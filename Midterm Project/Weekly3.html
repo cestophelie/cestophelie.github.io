@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Bouncing Ball</title>
+		<style>
+			@-webkit-keyframes bounce{
+			
+			0% {left:0%; bottom:0px;-webkit-animation-timing-function: ease-out;}
+			20%{left:15%; bottom:170px;-webkit-animation-timing-function: ease-in;}
+			25% {left:25%; bottom:200px;-webkit-animation-timing-function: ease-in;}
+			30%{left:35%; bottom:170px;-webkit-animation-timing-function: ease-out;}
+			40%{left:45%; bottom:100px;-webkit-animation-timing-function: ease-out;}
+
+			50% {left:50%; bottom:0px;-webkit-animation-timing-function: ease-out;}
+			70%{left:65%; bottom:170px;-webkit-animation-timing-function: ease-in;}
+			75% {left:75%; bottom:200px;-webkit-animation-timing-function: ease-in;}
+			80%{left:80%; bottom:170px;-webkit-animation-timing-function: ease-in;}
+			90%{left:90%; bottom:100px;-webkit-animation-timing-function: ease-out;}
+			100% {left:100%; bottom:0px;-webkit-animation-timing-function: ease-out;}
+			
+		}
+
+			#ball{
+			position:absolute;
+			width: 30px;
+			height: 30px;
+			background: green;
+			border-radius:15px;
+
+			-webkit-animation-name:bounce;
+			-webkit-animation-iteration-count:5;
+			-webkit-animation-duration:5s;}
+			
+		</style>
+	</head>
+	<body><div id="ball"></div>
+	</body>
+</html>
